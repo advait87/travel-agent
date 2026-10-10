@@ -26,18 +26,20 @@ struct HomeView: View {
 
     var body: some View {
         NavigationStack {
+            ScrollViewReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     if let trip = currentTrip {
-                        tripHeader(trip)
+                        tripHeader(trip).id("top")
                         Button { mappedTrip = trip } label: { MiniDayMap(trip: trip) }
                             .buttonStyle(.plain)
-                        agentCard(trip)
+                        agentCard(trip).id("agent")
                         composer
                         DayCarousel(trip: trip, visibleDay: $visibleDay)
                             .padding(.horizontal, -16)
-                        LiveModeCard(trip: trip, dayNumber: visibleDay ?? trip.todayNumber)
-                        feed
+                            .id("days")
+                        LiveModeCard(trip: trip, dayNumber: visibleDay ?? trip.todayNumber).id("live")
+                        feed.id("feed")
                         TripSummaryCard(trip: trip)
                         TripTipsCard(trip: trip)
                     } else {
@@ -46,6 +48,23 @@ struct HomeView: View {
                     otherTrips
                 }
                 .padding()
+            }
+            .onChange(of: router.scrollTarget) { _, target in
+                guard let target else { return }
+                withAnimation { proxy.scrollTo(target, anchor: .top) }
+                router.scrollTarget = nil
+            }
+            .onChange(of: router.say) { _, text in
+                guard let text else { return }
+                router.say = nil
+                withAnimation { proxy.scrollTo("agent", anchor: .top) }
+                Task { await typeAndSend(text) }
+            }
+            .onChange(of: router.showMap) { _, show in
+                if show, let trip = currentTrip { mappedTrip = trip }
+                if !show { mappedTrip = nil }
+            }
+            .onChange(of: router.showChat) { _, show in showingChat = show }
             }
             .background(Color(.systemGroupedBackground))
             .navigationTitle(navigationTitle)
@@ -252,6 +271,17 @@ struct HomeView: View {
                 .tint(.secondary)
             }
         }
+    }
+
+    /// Demo remote: types the text into the box letter by letter, then sends it like dictation.
+    private func typeAndSend(_ text: String) async {
+        update = ""
+        for character in text {
+            update.append(character)
+            try? await Task.sleep(for: .milliseconds(35))
+        }
+        try? await Task.sleep(for: .milliseconds(400))
+        send(update, source: .voice)
     }
 
     private func send(_ text: String, source: ProactiveAgent.Source) {

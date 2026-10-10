@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03DBD3B9E4908E72FF0F22D0 /* ClaudeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412184BBEFDA2D000EECA6E6 /* ClaudeClient.swift */; };
+		07181978C3E79932DFCB4A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9856631D0EC856F1C16F6F1B /* Assets.xcassets */; };
 		0E6AE0500412EBE5B7D10C4C /* VoiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F3738957F44BB397B7E95E /* VoiceInput.swift */; };
 		0EC6B44563C746330630B484 /* TripActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0DAFDE16048F56F668B9D /* TripActivity.swift */; };
 		0FB3CFA6DD27FC1CF4CDC7A3 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988186F2686CF88F167146A8 /* Chat.swift */; };
@@ -110,6 +111,7 @@
 		891BEF1A22762E18B4476DEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		94DEEE6352EEF4F3394D97DD /* FlowScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowScreenshotTests.swift; sourceTree = "<group>"; };
 		962988D7EC4687BB2132C9A2 /* Automation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation.swift; sourceTree = "<group>"; };
+		9856631D0EC856F1C16F6F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		988186F2686CF88F167146A8 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		9F49761EEA7B3863ABFF73B7 /* TravelAgentWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgentWidget.swift; sourceTree = "<group>"; };
 		A8C167709BB6A6FD8BAF4A5C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		862DD4360205241FF48BA46C /* TravelAgent */ = {
 			isa = PBXGroup;
 			children = (
+				9856631D0EC856F1C16F6F1B /* Assets.xcassets */,
 				B7663F8109CFE6043A467D2F /* Info.plist */,
 				319F87088DA6802D5D57017D /* App */,
 				F89F6D74C6E195E845636C13 /* Models */,
@@ -258,6 +261,7 @@
 			buildConfigurationList = 177E7ECA11CE62831763F6FA /* Build configuration list for PBXNativeTarget "TravelAgent" */;
 			buildPhases = (
 				8318309C57C8EBCC30F91E72 /* Sources */,
+				866233F9B245C3B7B8B9F8DB /* Resources */,
 				B8249E9106462276C5A489CE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -374,6 +378,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		866233F9B245C3B7B8B9F8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07181978C3E79932DFCB4A62 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		062D5D61AAD67F25CB0F2344 /* Sources */ = {

@@ -43,9 +43,7 @@ struct TravelAgentApp: App {
                     }
                 }
                 // travelagent://tell (from the widget) opens straight into "tell your agent".
-                .onOpenURL { url in
-                    if url.host() == "tell" { AppRouter.shared.composeRequested = true }
-                }
+                .onOpenURL { url in AppRouter.shared.open(url) }
         }
         .modelContainer(SharedModel.container)
         .onChange(of: scenePhase) { _, phase in
@@ -58,8 +56,36 @@ struct TravelAgentApp: App {
     }
 }
 
+/// Deep links: travelagent://tell (widget) plus demo remote-control links, e.g.
+/// travelagent://say?text=…, /apply, /ignore, /undo, /check, /map, /chat, /close, /scroll?to=feed.
 @MainActor @Observable
 final class AppRouter {
     static let shared = AppRouter()
     var composeRequested = false
+    /// Text to type into the agent box and send (shown being typed, like dictation).
+    var say: String?
+    var showMap = false
+    var showChat = false
+    var scrollTarget: String?
+
+    func open(_ url: URL) {
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
+        let agent = ProactiveAgent.shared
+        let context = SharedModel.container.mainContext
+        let proposals = (try? context.fetch(FetchDescriptor<PlanProposal>(
+            sortBy: [SortDescriptor(\.createdAt, order: .reverse)]))) ?? []
+        switch url.host() {
+        case "tell": composeRequested = true
+        case "say": say = query?.first { $0.name == "text" }?.value
+        case "apply": if let p = proposals.first(where: { $0.state == .pending }) { withAnimation { agent.apply(p) } }
+        case "ignore": if let p = proposals.first(where: { $0.state == .pending }) { withAnimation { agent.dismiss(p) } }
+        case "undo": if let p = proposals.first(where: { $0.canUndo }) { withAnimation { agent.undo(p) } }
+        case "check": Task { await agent.checkNow() }
+        case "map": showChat = false; showMap = true
+        case "chat": showMap = false; showChat = true
+        case "close", "home": showMap = false; showChat = false
+        case "scroll": scrollTarget = query?.first { $0.name == "to" }?.value
+        default: break
+        }
+    }
 }
