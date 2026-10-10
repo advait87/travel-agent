@@ -1,8 +1,25 @@
 # Travel Agent
 
-**A proactive AI travel companion for iPhone that plans your trip, then looks after your day.**
+**An iPhone travel app that doesn't just plan your trip. It keeps fixing the plan while you're on it.**
 
-Most itinerary apps hand you a static document. Travel Agent keeps watching the day as it happens: the time, where you are, what you tell it, and how you answer its questions. When the day drifts from the plan, it tells you what to change. Stayed at the beach two hours longer? It suggests skipping the fort that's least worth it, and you apply that with one tap.
+## TL;DR
+
+**The problem:** travel plans break within hours. You stay longer at the beach, lunch runs late, a place is closed. Your itinerary doesn't know, so you're left reshuffling the rest of the day yourself, on your phone, in the sun.
+
+**What we do differently:** Travel Agent watches your day *while it happens*. It knows the time, where you are, and what you tell it. When things slip, it tells you what to change.
+
+> *"You stayed at Baga Beach 2 hours longer than planned. Skip Fort Aguada, it's the least worth it today, and you'll still make the sunset."*  → **Apply** ✓
+
+**Why it's different from other trip planners:**
+
+| Other trip planners | Travel Agent |
+|---|---|
+| Plan once, then you're on your own | Checks in every 30 minutes and rebalances your day |
+| A wall of text | Clear time blocks, a map of today's route, swipeable day cards |
+| You have to open the app and type | It asks you ("Done with lunch?"), notices when you arrive somewhere, and you can just talk to it |
+| Changes mean starting over | One tap to apply, one tap to undo |
+
+**Under the hood:** Claude plans and replans the trip. A fast, cheap model (Groq) does the frequent check-ins, so the agent can stay alert all day for very little cost.
 
 > Built entirely by voice. Every prompt was dictated with [Wispr Flow](https://wisprflow.ai) into [Claude Code](https://claude.com/claude-code); no code was hand-written. Built for the Hacker House Goa Wispr Flow task.
 
