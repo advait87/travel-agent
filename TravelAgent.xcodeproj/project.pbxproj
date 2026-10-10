@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DBD3B9E4908E72FF0F22D0 /* ClaudeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412184BBEFDA2D000EECA6E6 /* ClaudeClient.swift */; };
+		0E6AE0500412EBE5B7D10C4C /* VoiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F3738957F44BB397B7E95E /* VoiceInput.swift */; };
+		0EC6B44563C746330630B484 /* TripActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0DAFDE16048F56F668B9D /* TripActivity.swift */; };
+		0FB3CFA6DD27FC1CF4CDC7A3 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988186F2686CF88F167146A8 /* Chat.swift */; };
+		1013D04309A26992E562E49D /* ItineraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F57B80310AE55A37DFD034C /* ItineraryView.swift */; };
+		303E0BEAC7FF093CD9413BF3 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BACA937C2B637B0BF0AB6 /* CheckIn.swift */; };
+		400834EE97AD80DD2AFCE763 /* TravelAgentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362E83F8601D222EEF8682C /* TravelAgentService.swift */; };
+		468293AA7320BDE6A2C8512B /* AgentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D976DDD25FD3A69B493B1BF /* AgentEvent.swift */; };
+		51A722A90FE950CCDFCF6079 /* PlaceResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA596699182774118E8A6A7 /* PlaceResolver.swift */; };
+		55A3533638409C70600BE58C /* TripActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0DAFDE16048F56F668B9D /* TripActivity.swift */; };
+		6EA03F8AC12859590E9CA9B3 /* GroqClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD7201C8C071EA7FE160B3 /* GroqClient.swift */; };
+		7A2341FC287065A5CD7CFED1 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F889BF1F0641A64D727C59 /* Proposal.swift */; };
+		815C08CF029D1DFA3B799700 /* Replan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF847609B54156DCBAD20FA /* Replan.swift */; };
+		8AF771B005844B8CA9F5E35C /* DayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BF5521DB05418F2321799 /* DayMapView.swift */; };
+		94DC25BF0F6761100371B97F /* TravelAgentWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49761EEA7B3863ABFF73B7 /* TravelAgentWidget.swift */; };
+		986A7E545EC1BFE4853B8963 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B31A7B95918D67ED95D132 /* Theme.swift */; };
+		9E9E39AA42DD33C438A4D72C /* FlowScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DEEE6352EEF4F3394D97DD /* FlowScreenshotTests.swift */; };
+		A061A9BEF916D53406B2EB51 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C1FEDC52B8DFDC127CF17E /* KeychainStore.swift */; };
+		A4C523314763CEEFB800099A /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70351B8819CF9F74046C76B /* DemoData.swift */; };
+		A5E2B22CCE4C800A007B9702 /* ProactiveAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CAEB1ED7776CCEBE98E595 /* ProactiveAgent.swift */; };
+		A6C3E0FE256A94FF65ED1A4B /* PlanTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09A052A3997BB981B97C0F /* PlanTripView.swift */; };
+		B4B7CC6446846FD3B699F0D8 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B650E524416D07B5ABBEC /* LocationService.swift */; };
+		B89190542D26D020CBF47D08 /* TravelAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24501570088811724F078000 /* TravelAgentApp.swift */; };
+		B896CF49B199A1AA3B1C4713 /* Automation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962988D7EC4687BB2132C9A2 /* Automation.swift */; };
+		B95B0BE14CE782C1D309507B /* HoldToTalkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81530C06376FE1E34D250B73 /* HoldToTalkButton.swift */; };
+		BAFF3CE5662DD790E3667037 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C167709BB6A6FD8BAF4A5C /* SettingsView.swift */; };
+		C3C41D6A3F77DAF26EF02910 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15519869A77F1CA1814B4273 /* ChatView.swift */; };
+		C7BE1334E88AE2DB939F5586 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891BEF1A22762E18B4476DEF /* HomeView.swift */; };
+		CCCB17117F3EFAC61BCCA84F /* TravelAgentWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4C2C879DE5B8095881781922 /* TravelAgentWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCE875DE96EFFD14BD487818 /* LiveModeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E046B84DDD645416AA80B3 /* LiveModeCard.swift */; };
+		CE5FD1CB956341C8FF9D6CE8 /* TripLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190C6CF0E926755BFB0F800 /* TripLiveActivity.swift */; };
+		D0653A3A808084626C51AB90 /* ProactiveAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE65C1801E612AF4C2B0063 /* ProactiveAgentTests.swift */; };
+		DABE7C52C5A43DE934CBD541 /* TravelAgentIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C14759BDF93C2FB26E29D /* TravelAgentIntents.swift */; };
+		E42D55926A72C78D0F6A91F9 /* UsageTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF948985DDE62FDDBE3EB64B /* UsageTracker.swift */; };
+		E5A46C5BB7AED36E84CCC4E5 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCB82342EBB7E6BA48519C1 /* Trip.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BFB84210F908BC469677A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B9C2B006783DBC070DC8EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2A5215B2F14D3CAD32208B;
+			remoteInfo = TravelAgentWidget;
+		};
+		606FA42B22950DC1917DB0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B9C2B006783DBC070DC8EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3DC62A5EEC964CFD7164CCA;
+			remoteInfo = TravelAgent;
+		};
+		CC3DDBAE95CC848F77C49E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B9C2B006783DBC070DC8EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3DC62A5EEC964CFD7164CCA;
+			remoteInfo = TravelAgent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8249E9106462276C5A489CE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CCCB17117F3EFAC61BCCA84F /* TravelAgentWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03F0DAFDE16048F56F668B9D /* TripActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripActivity.swift; sourceTree = "<group>"; };
+		08E046B84DDD645416AA80B3 /* LiveModeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModeCard.swift; sourceTree = "<group>"; };
+		0A5B650E524416D07B5ABBEC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		10096A2B30E5BD9F1BBADC79 /* TravelAgentUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TravelAgentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15519869A77F1CA1814B4273 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		1C09A052A3997BB981B97C0F /* PlanTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTripView.swift; sourceTree = "<group>"; };
+		24501570088811724F078000 /* TravelAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgentApp.swift; sourceTree = "<group>"; };
+		264BF5521DB05418F2321799 /* DayMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMapView.swift; sourceTree = "<group>"; };
+		2A7BACA937C2B637B0BF0AB6 /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		2AF847609B54156DCBAD20FA /* Replan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replan.swift; sourceTree = "<group>"; };
+		2D976DDD25FD3A69B493B1BF /* AgentEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEvent.swift; sourceTree = "<group>"; };
+		2F57B80310AE55A37DFD034C /* ItineraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryView.swift; sourceTree = "<group>"; };
+		3190C6CF0E926755BFB0F800 /* TripLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripLiveActivity.swift; sourceTree = "<group>"; };
+		3CA596699182774118E8A6A7 /* PlaceResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceResolver.swift; sourceTree = "<group>"; };
+		412184BBEFDA2D000EECA6E6 /* ClaudeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeClient.swift; sourceTree = "<group>"; };
+		4C2C879DE5B8095881781922 /* TravelAgentWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TravelAgentWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C1FEDC52B8DFDC127CF17E /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		5F86164744AC00D9C40ADA51 /* TravelAgentTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TravelAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F889BF1F0641A64D727C59 /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
+		63B31A7B95918D67ED95D132 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6EE65C1801E612AF4C2B0063 /* ProactiveAgentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProactiveAgentTests.swift; sourceTree = "<group>"; };
+		7CCB82342EBB7E6BA48519C1 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		81530C06376FE1E34D250B73 /* HoldToTalkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldToTalkButton.swift; sourceTree = "<group>"; };
+		8362E83F8601D222EEF8682C /* TravelAgentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgentService.swift; sourceTree = "<group>"; };
+		891BEF1A22762E18B4476DEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		94DEEE6352EEF4F3394D97DD /* FlowScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowScreenshotTests.swift; sourceTree = "<group>"; };
+		962988D7EC4687BB2132C9A2 /* Automation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation.swift; sourceTree = "<group>"; };
+		988186F2686CF88F167146A8 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		9F49761EEA7B3863ABFF73B7 /* TravelAgentWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgentWidget.swift; sourceTree = "<group>"; };
+		A8C167709BB6A6FD8BAF4A5C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B26C14759BDF93C2FB26E29D /* TravelAgentIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgentIntents.swift; sourceTree = "<group>"; };
+		B7663F8109CFE6043A467D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B9F3738957F44BB397B7E95E /* VoiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInput.swift; sourceTree = "<group>"; };
+		BF948985DDE62FDDBE3EB64B /* UsageTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageTracker.swift; sourceTree = "<group>"; };
+		BFB8C830A29B79A3710DFEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D70351B8819CF9F74046C76B /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		D7CAEB1ED7776CCEBE98E595 /* ProactiveAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProactiveAgent.swift; sourceTree = "<group>"; };
+		D85396CEACD73EBE63EA01D4 /* TravelAgent.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TravelAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BD7201C8C071EA7FE160B3 /* GroqClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroqClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		292056CA6D158E6531420AE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15519869A77F1CA1814B4273 /* ChatView.swift */,
+				264BF5521DB05418F2321799 /* DayMapView.swift */,
+				81530C06376FE1E34D250B73 /* HoldToTalkButton.swift */,
+				891BEF1A22762E18B4476DEF /* HomeView.swift */,
+				2F57B80310AE55A37DFD034C /* ItineraryView.swift */,
+				08E046B84DDD645416AA80B3 /* LiveModeCard.swift */,
+				1C09A052A3997BB981B97C0F /* PlanTripView.swift */,
+				A8C167709BB6A6FD8BAF4A5C /* SettingsView.swift */,
+				63B31A7B95918D67ED95D132 /* Theme.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ACA021A7ACFA14CB40222CC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				03F0DAFDE16048F56F668B9D /* TripActivity.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		319F87088DA6802D5D57017D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D70351B8819CF9F74046C76B /* DemoData.swift */,
+				24501570088811724F078000 /* TravelAgentApp.swift */,
+				B26C14759BDF93C2FB26E29D /* TravelAgentIntents.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3D800D56E708D9B7807CABA2 /* TravelAgentTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EE65C1801E612AF4C2B0063 /* ProactiveAgentTests.swift */,
+			);
+			path = TravelAgentTests;
+			sourceTree = "<group>";
+		};
+		6642A2206003FA5D3BD38D1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D85396CEACD73EBE63EA01D4 /* TravelAgent.app */,
+				5F86164744AC00D9C40ADA51 /* TravelAgentTests.xctest */,
+				10096A2B30E5BD9F1BBADC79 /* TravelAgentUITests.xctest */,
+				4C2C879DE5B8095881781922 /* TravelAgentWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DD92327468E62D87803D17A /* TravelAgentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94DEEE6352EEF4F3394D97DD /* FlowScreenshotTests.swift */,
+			);
+			path = TravelAgentUITests;
+			sourceTree = "<group>";
+		};
+		74742731D92E3087187D6B8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				962988D7EC4687BB2132C9A2 /* Automation.swift */,
+				412184BBEFDA2D000EECA6E6 /* ClaudeClient.swift */,
+				F4BD7201C8C071EA7FE160B3 /* GroqClient.swift */,
+				50C1FEDC52B8DFDC127CF17E /* KeychainStore.swift */,
+				0A5B650E524416D07B5ABBEC /* LocationService.swift */,
+				3CA596699182774118E8A6A7 /* PlaceResolver.swift */,
+				D7CAEB1ED7776CCEBE98E595 /* ProactiveAgent.swift */,
+				8362E83F8601D222EEF8682C /* TravelAgentService.swift */,
+				BF948985DDE62FDDBE3EB64B /* UsageTracker.swift */,
+				B9F3738957F44BB397B7E95E /* VoiceInput.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		862DD4360205241FF48BA46C /* TravelAgent */ = {
+			isa = PBXGroup;
+			children = (
+				B7663F8109CFE6043A467D2F /* Info.plist */,
+				319F87088DA6802D5D57017D /* App */,
+				F89F6D74C6E195E845636C13 /* Models */,
+				74742731D92E3087187D6B8E /* Services */,
+				292056CA6D158E6531420AE3 /* Views */,
+			);
+			path = TravelAgent;
+			sourceTree = "<group>";
+		};
+		D8526275578E89BCAAE77F4B = {
+			isa = PBXGroup;
+			children = (
+				2ACA021A7ACFA14CB40222CC /* Shared */,
+				862DD4360205241FF48BA46C /* TravelAgent */,
+				3D800D56E708D9B7807CABA2 /* TravelAgentTests */,
+				6DD92327468E62D87803D17A /* TravelAgentUITests */,
+				FFF2760155988B27787A867B /* TravelAgentWidget */,
+				6642A2206003FA5D3BD38D1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F89F6D74C6E195E845636C13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D976DDD25FD3A69B493B1BF /* AgentEvent.swift */,
+				988186F2686CF88F167146A8 /* Chat.swift */,
+				2A7BACA937C2B637B0BF0AB6 /* CheckIn.swift */,
+				60F889BF1F0641A64D727C59 /* Proposal.swift */,
+				2AF847609B54156DCBAD20FA /* Replan.swift */,
+				7CCB82342EBB7E6BA48519C1 /* Trip.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFF2760155988B27787A867B /* TravelAgentWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BFB8C830A29B79A3710DFEDC /* Info.plist */,
+				9F49761EEA7B3863ABFF73B7 /* TravelAgentWidget.swift */,
+				3190C6CF0E926755BFB0F800 /* TripLiveActivity.swift */,
+			);
+			path = TravelAgentWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3DC62A5EEC964CFD7164CCA /* TravelAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177E7ECA11CE62831763F6FA /* Build configuration list for PBXNativeTarget "TravelAgent" */;
+			buildPhases = (
+				8318309C57C8EBCC30F91E72 /* Sources */,
+				B8249E9106462276C5A489CE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B63EB493A2A51E11C6AC6A /* PBXTargetDependency */,
+			);
+			name = TravelAgent;
+			packageProductDependencies = (
+			);
+			productName = TravelAgent;
+			productReference = D85396CEACD73EBE63EA01D4 /* TravelAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB8466110C7DADB6D3F950E0 /* TravelAgentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F57919F50C8AD6E1CF2A450 /* Build configuration list for PBXNativeTarget "TravelAgentUITests" */;
+			buildPhases = (
+				062D5D61AAD67F25CB0F2344 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1A8EB72A3C23D2B6DB7BFC9 /* PBXTargetDependency */,
+			);
+			name = TravelAgentUITests;
+			packageProductDependencies = (
+			);
+			productName = TravelAgentUITests;
+			productReference = 10096A2B30E5BD9F1BBADC79 /* TravelAgentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DF71FBA96A635DF6969E8BE5 /* TravelAgentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BF5AB904CFDF63C01C4704B /* Build configuration list for PBXNativeTarget "TravelAgentTests" */;
+			buildPhases = (
+				BD4DE9A7B4A0C521A47048EF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD66F2C8060CBEA9DE3F146A /* PBXTargetDependency */,
+			);
+			name = TravelAgentTests;
+			packageProductDependencies = (
+			);
+			productName = TravelAgentTests;
+			productReference = 5F86164744AC00D9C40ADA51 /* TravelAgentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA2A5215B2F14D3CAD32208B /* TravelAgentWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C001F87CC92B3094523980BD /* Build configuration list for PBXNativeTarget "TravelAgentWidget" */;
+			buildPhases = (
+				10EBFC7EB11B4973EB090666 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelAgentWidget;
+			packageProductDependencies = (
+			);
+			productName = TravelAgentWidget;
+			productReference = 4C2C879DE5B8095881781922 /* TravelAgentWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98B9C2B006783DBC070DC8EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A3DC62A5EEC964CFD7164CCA = {
+						DevelopmentTeam = 47MQ7BPRNW;
+						ProvisioningStyle = Automatic;
+					};
+					AB8466110C7DADB6D3F950E0 = {
+						DevelopmentTeam = 47MQ7BPRNW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3DC62A5EEC964CFD7164CCA;
+					};
+					DF71FBA96A635DF6969E8BE5 = {
+						DevelopmentTeam = 47MQ7BPRNW;
+						ProvisioningStyle = Automatic;
+					};
+					EA2A5215B2F14D3CAD32208B = {
+						DevelopmentTeam = 47MQ7BPRNW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 10D794A7890AA6657DA49F1A /* Build configuration list for PBXProject "TravelAgent" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D8526275578E89BCAAE77F4B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6642A2206003FA5D3BD38D1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3DC62A5EEC964CFD7164CCA /* TravelAgent */,
+				EA2A5215B2F14D3CAD32208B /* TravelAgentWidget */,
+				DF71FBA96A635DF6969E8BE5 /* TravelAgentTests */,
+				AB8466110C7DADB6D3F950E0 /* TravelAgentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		062D5D61AAD67F25CB0F2344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9E39AA42DD33C438A4D72C /* FlowScreenshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10EBFC7EB11B4973EB090666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DC25BF0F6761100371B97F /* TravelAgentWidget.swift in Sources */,
+				55A3533638409C70600BE58C /* TripActivity.swift in Sources */,
+				CE5FD1CB956341C8FF9D6CE8 /* TripLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8318309C57C8EBCC30F91E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468293AA7320BDE6A2C8512B /* AgentEvent.swift in Sources */,
+				B896CF49B199A1AA3B1C4713 /* Automation.swift in Sources */,
+				0FB3CFA6DD27FC1CF4CDC7A3 /* Chat.swift in Sources */,
+				C3C41D6A3F77DAF26EF02910 /* ChatView.swift in Sources */,
+				303E0BEAC7FF093CD9413BF3 /* CheckIn.swift in Sources */,
+				03DBD3B9E4908E72FF0F22D0 /* ClaudeClient.swift in Sources */,
+				8AF771B005844B8CA9F5E35C /* DayMapView.swift in Sources */,
+				A4C523314763CEEFB800099A /* DemoData.swift in Sources */,
+				6EA03F8AC12859590E9CA9B3 /* GroqClient.swift in Sources */,
+				B95B0BE14CE782C1D309507B /* HoldToTalkButton.swift in Sources */,
+				C7BE1334E88AE2DB939F5586 /* HomeView.swift in Sources */,
+				1013D04309A26992E562E49D /* ItineraryView.swift in Sources */,
+				A061A9BEF916D53406B2EB51 /* KeychainStore.swift in Sources */,
+				CCE875DE96EFFD14BD487818 /* LiveModeCard.swift in Sources */,
+				B4B7CC6446846FD3B699F0D8 /* LocationService.swift in Sources */,
+				51A722A90FE950CCDFCF6079 /* PlaceResolver.swift in Sources */,
+				A6C3E0FE256A94FF65ED1A4B /* PlanTripView.swift in Sources */,
+				A5E2B22CCE4C800A007B9702 /* ProactiveAgent.swift in Sources */,
+				7A2341FC287065A5CD7CFED1 /* Proposal.swift in Sources */,
+				815C08CF029D1DFA3B799700 /* Replan.swift in Sources */,
+				BAFF3CE5662DD790E3667037 /* SettingsView.swift in Sources */,
+				986A7E545EC1BFE4853B8963 /* Theme.swift in Sources */,
+				B89190542D26D020CBF47D08 /* TravelAgentApp.swift in Sources */,
+				DABE7C52C5A43DE934CBD541 /* TravelAgentIntents.swift in Sources */,
+				400834EE97AD80DD2AFCE763 /* TravelAgentService.swift in Sources */,
+				E5A46C5BB7AED36E84CCC4E5 /* Trip.swift in Sources */,
+				0EC6B44563C746330630B484 /* TripActivity.swift in Sources */,
+				E42D55926A72C78D0F6A91F9 /* UsageTracker.swift in Sources */,
+				0E6AE0500412EBE5B7D10C4C /* VoiceInput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4DE9A7B4A0C521A47048EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0653A3A808084626C51AB90 /* ProactiveAgentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60B63EB493A2A51E11C6AC6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2A5215B2F14D3CAD32208B /* TravelAgentWidget */;
+			targetProxy = 3BFB84210F908BC469677A1C /* PBXContainerItemProxy */;
+		};
+		BD66F2C8060CBEA9DE3F146A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3DC62A5EEC964CFD7164CCA /* TravelAgent */;
+			targetProxy = 606FA42B22950DC1917DB0D5 /* PBXContainerItemProxy */;
+		};
+		D1A8EB72A3C23D2B6DB7BFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3DC62A5EEC964CFD7164CCA /* TravelAgent */;
+			targetProxy = CC3DDBAE95CC848F77C49E6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D12CB3709801DEBAE7257A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelAgent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Travel Agent";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your travel agent notices when you arrive at or leave a planned stop, so it can adjust your day automatically.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your travel agent uses your location to suggest things to do nearby and keep your day on track.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hold the mic to tell your travel agent what you are doing.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Your voice is turned into text so your travel agent can understand your update.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		17B9409098DC821041BD5DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelAgentWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Travel Agent Widget";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WIDGET_EXTENSION";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		282F00808A89D665C7F67727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TravelAgent;
+			};
+			name = Debug;
+		};
+		28EA2FDACF981674E39C0C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelAgent.app/TravelAgent";
+			};
+			name = Debug;
+		};
+		440C01E2FA60BCC0D7F01132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 47MQ7BPRNW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6999C013907B8F7351E14F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelAgent.app/TravelAgent";
+			};
+			name = Release;
+		};
+		768E6F6683502EE9F39FB6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelAgentWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Travel Agent Widget";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WIDGET_EXTENSION";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		891056EB6EAC227E3C496C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TravelAgent;
+			};
+			name = Release;
+		};
+		D66F7D7B2B6B4A820612E6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 47MQ7BPRNW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E7373E376CA27863E8F039DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelAgent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Travel Agent";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your travel agent notices when you arrive at or leave a planned stop, so it can adjust your day automatically.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your travel agent uses your location to suggest things to do nearby and keep your day on track.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hold the mic to tell your travel agent what you are doing.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Your voice is turned into text so your travel agent can understand your update.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.advaitandhale.travelagent;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10D794A7890AA6657DA49F1A /* Build configuration list for PBXProject "TravelAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66F7D7B2B6B4A820612E6F8 /* Debug */,
+				440C01E2FA60BCC0D7F01132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		177E7ECA11CE62831763F6FA /* Build configuration list for PBXNativeTarget "TravelAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7373E376CA27863E8F039DC /* Debug */,
+				0D12CB3709801DEBAE7257A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2F57919F50C8AD6E1CF2A450 /* Build configuration list for PBXNativeTarget "TravelAgentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282F00808A89D665C7F67727 /* Debug */,
+				891056EB6EAC227E3C496C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6BF5AB904CFDF63C01C4704B /* Build configuration list for PBXNativeTarget "TravelAgentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EA2FDACF981674E39C0C24 /* Debug */,
+				6999C013907B8F7351E14F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C001F87CC92B3094523980BD /* Build configuration list for PBXNativeTarget "TravelAgentWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768E6F6683502EE9F39FB6BE /* Debug */,
+				17B9409098DC821041BD5DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98B9C2B006783DBC070DC8EB /* Project object */;
+}
