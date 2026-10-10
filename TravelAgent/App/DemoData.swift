@@ -30,7 +30,7 @@ enum DemoData {
                   "The Dil Chahta Hai fort, best at golden hour.", 0),
             block(570, 120, "Dinner at Thalassa", "Thalassa, Siolim", .food, ["Greek", "Sunset"],
                   "Greek taverna on the cliffs with live music.", 1500),
-        ].filter { $0.start >= 0 && $0.end < 24 * 60 }
+        ].filter { $0.start >= 0 }  // late at night the day may run past midnight; times wrap on screen
         let day = ItineraryDay(dayNumber: 1, title: "Beaches, forts & sunsets", activities: blocks,
                                imagePrompt: "Goa beach with a Portuguese fort at golden hour")
         context.insert(Trip(destination: "Goa", startDate: .now, budget: 20_000, travelers: 2,
